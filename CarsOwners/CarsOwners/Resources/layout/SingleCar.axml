@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="35px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/lightGreen"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout1">
+        <ImageView
+            android:src="@drawable/car"
+            android:layout_width="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/carIcon" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:layout_marginLeft="30dp"
+            android:columnCount="2"
+            android:id="@+id/gridLayout1">
+            <TextView
+                android:text="@string/Model"
+                style="@style/labelStyle"
+                android:id="@+id/textView1" />
+            <TextView
+                android:text="Test"
+                style="@style/dataStyle"
+                android:id="@+id/modelTXT"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="@string/ProductionYear"
+                style="@style/labelStyle"
+                android:id="@+id/textView2" />
+            <TextView
+                android:text="Test"
+                style="@style/dataStyle"
+                android:id="@+id/productionTXT"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="@string/Mileage"
+                style="@style/labelStyle"
+                android:id="@+id/textView3" />
+            <TextView
+                android:text="Test"
+                style="@style/dataStyle"
+                android:id="@+id/mileageTXT"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="@string/HorsePower"
+                style="@style/labelStyle"
+                android:id="@+id/textView4" />
+            <TextView
+                android:text="Test"
+                style="@style/dataStyle"
+                android:id="@+id/horsePowerTXT"
+                android:layout_gravity="center" />
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

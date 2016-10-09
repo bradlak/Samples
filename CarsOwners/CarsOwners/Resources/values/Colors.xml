@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="green">#78EB81</color>
+  <color name="black">#000000</color>
+  <color name="lightGreen">#BDF0C1</color>
+  <color name="grey">#7E8385</color>
+
+  <color name="lowPower">#17BF30</color>
+  <color name="mediumPower">#FFFF00</color>
+  <color name="hightPower">#FFBB00</color>
+  <color name="ultraPower">#FF0000</color>
+</resources>

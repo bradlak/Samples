@@ -1,0 +1,12 @@
+div {
+float: left;
+width: 400px;
+height: 100px;
+align:center;
+}
+
+body {
+    text-align: center;
+    background-image: url("wisielec.jpg");
+    background-repeat: no-repeat;
+}

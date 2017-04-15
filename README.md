@@ -13,3 +13,6 @@ Web api single controller application. It uses:
 - Entity Framework Core
 - generic repository pattern
 - eager loading called via api
+
+* <b>CustomersCrud</b> 
+ASP.NET Core application for CRUD operations.

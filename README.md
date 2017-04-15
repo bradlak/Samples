@@ -1,18 +1,19 @@
 # Samples
 
-* <b>CarsOwners</b> 
+### CarsOwners 
 Expandable list view with custom adapter for Xamarin.Android.
 
 
-* <b>JsHangman</b>
+### JsHangman
 The simplest implementation of hangman game written in Javascript.
 
 
-* <b>EFCoreTest</b> 
+### EFCoreTest 
 Web api single controller application. It uses:
 - Entity Framework Core
 - generic repository pattern
 - eager loading called via api
 
-* <b>CustomersCrud</b> 
+### CustomersCrud
 ASP.NET Core application for CRUD operations.
+

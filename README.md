@@ -17,3 +17,5 @@ Web api single controller application. It uses:
 ### CustomersCrud
 ASP.NET Core application for CRUD operations.
 
+### DrawableAnimations
+Simple coin animation in Xamarin.Android

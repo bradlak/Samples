@@ -1,0 +1,13 @@
+﻿<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@drawable/goldCoin1" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin2" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin3" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin4" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin5" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin6" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin7" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin8" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin9" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin10" android:duration="100" />
+  <item android:drawable="@drawable/goldCoin11" android:duration="100" />
+</animation-list>

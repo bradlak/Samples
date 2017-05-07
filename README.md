@@ -1,8 +1,23 @@
 # Samples
 
+
+
+
+## Xamarin
+
+### DrawableAnimations
+Simple coin animation in Xamarin.Android
+
 ### CarsOwners 
 Expandable list view with custom adapter for Xamarin.Android.
 
+### FormsPresenter
+Xamarin.Forms pages presenter.
+
+
+
+
+## Other
 
 ### JsHangman
 The simplest implementation of hangman game written in Javascript.
@@ -16,6 +31,3 @@ Web api single controller application. It uses:
 
 ### CustomersCrud
 ASP.NET Core application for CRUD operations.
-
-### DrawableAnimations
-Simple coin animation in Xamarin.Android

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="FormsPresenter.Pages.MainPage">
+    <ContentPage.Content>
+		<StackLayout Orientation="Vertical" Margin="0,16,0,0">
+			<Button x:Name="contentPageBtn" Text="Content page" />
+			<Button x:Name="mdPageBtn" Text="Master detail page" />
+			<Button x:Name="navigationPageBtn" Text="Navigation page" />
+			<Button x:Name="tabbedPageBtn" Text="Tabbed page" />
+			<Button x:Name="carouselPageBtn" Text="Carousel page" />
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

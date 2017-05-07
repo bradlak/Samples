@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="FormsPresenter.Pages.SimpleContentPage">
+    <ContentPage.Content>
+		<StackLayout Orientation="Vertical" Padding="0, 20, 0, 0">
+			<Label Text="Content page" HorizontalTextAlignment="Center" />
+			<Button x:Name="backBtn" Text="Back" />
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

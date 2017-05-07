@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FormsPresenter.Pages.SimpleMasterPage" Title="Master page">
+	<ContentPage.Content>
+		<ListView x:Name="pagesList" Margin="0,16,0,0">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+				<ViewCell>
+						<StackLayout Orientation="Horizontal" Margin="0,8,0,0" Padding="16,0,16,0" VerticalOptions="CenterAndExpand">
+							<BoxView WidthRequest="30" HeightRequest="10" HorizontalOptions="Start" Color="{Binding Color}" />
+							<Label Text="{Binding Name}" FontSize="Medium" VerticalOptions="Center" />
+						</StackLayout>                  
+				</ViewCell>
+					</DataTemplate>
+			</ListView.ItemTemplate>
+			<ListView.Footer>
+				<Button Text="Back" x:Name="backBtn" HorizontalOptions="StartAndExpand" Margin="16,0,0,0"  />
+			</ListView.Footer>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>

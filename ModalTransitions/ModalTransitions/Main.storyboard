@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="13">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="12">
+            <objects>
+                <navigationController id="13" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="15">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="22" kind="relationship" relationship="rootViewController" id="Ozh-NO-kT7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228" y="42"/>
+        </scene>
+        <!--Modal transitions-->
+        <scene sceneID="21">
+            <objects>
+                <viewController id="22" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19"/>
+                        <viewControllerLayoutGuide type="bottom" id="20"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="23">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29">
+                                <rect key="frame" x="138" y="143" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="113"/>
+                                </constraints>
+                                <state key="normal" title="Cover Vertical">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="113"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <mask key="constraints">
+                                        <include reference="113"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33">
+                                <rect key="frame" x="134" y="217" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="41"/>
+                                </constraints>
+                                <state key="normal" title="Partial Curl">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="41"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="41"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </variation>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56">
+                                <rect key="frame" x="134" y="290" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="142"/>
+                                </constraints>
+                                <state key="normal" title="Flip Horizontal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="142"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <mask key="constraints">
+                                        <include reference="142"/>
+                                    </mask>
+                                </variation>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86">
+                                <rect key="frame" x="134" y="364" width="132" height="30"/>
+                                <state key="normal" title="Cross Dissolve">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="33" firstAttribute="centerX" secondItem="23" secondAttribute="centerX" id="39"/>
+                            <constraint firstItem="33" firstAttribute="top" secondItem="23" secondAttribute="top" constant="217" id="40"/>
+                            <constraint firstItem="29" firstAttribute="centerX" secondItem="33" secondAttribute="centerX" id="109"/>
+                            <constraint firstItem="29" firstAttribute="centerX" secondItem="86" secondAttribute="centerX" id="111"/>
+                            <constraint firstItem="29" firstAttribute="top" secondItem="23" secondAttribute="top" constant="143" id="112"/>
+                            <constraint firstItem="86" firstAttribute="top" secondItem="19" secondAttribute="bottom" constant="300" id="146"/>
+                            <constraint firstItem="86" firstAttribute="width" secondItem="56" secondAttribute="width" id="155"/>
+                            <constraint firstItem="56" firstAttribute="centerX" secondItem="33" secondAttribute="centerX" id="156"/>
+                            <constraint firstItem="56" firstAttribute="top" secondItem="19" secondAttribute="bottom" constant="226" id="157"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="29"/>
+                                <exclude reference="33"/>
+                                <exclude reference="56"/>
+                                <exclude reference="86"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="109"/>
+                                <exclude reference="111"/>
+                                <exclude reference="112"/>
+                                <exclude reference="39"/>
+                                <exclude reference="40"/>
+                                <exclude reference="156"/>
+                                <exclude reference="157"/>
+                                <exclude reference="146"/>
+                                <exclude reference="155"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="29"/>
+                                <include reference="33"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="39"/>
+                                <include reference="40"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" red="0.10196078431372549" green="0.66666666666666663" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                            <mask key="subviews">
+                                <include reference="56"/>
+                                <include reference="86"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="109"/>
+                                <include reference="111"/>
+                                <include reference="112"/>
+                                <include reference="156"/>
+                                <include reference="157"/>
+                                <include reference="146"/>
+                                <include reference="155"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modal transitions" id="EhP-S1-FE4"/>
+                    <connections>
+                        <outlet property="coverVerticalBtn" destination="29" id="name-outlet-29"/>
+                        <outlet property="crossDissolveBtn" destination="86" id="name-outlet-86"/>
+                        <outlet property="flipHorizontalBtn" destination="56" id="name-outlet-56"/>
+                        <outlet property="partialCurlBtn" destination="33" id="name-outlet-33"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="42"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="96">
+            <objects>
+                <viewController id="97" customClass="SecondViewController" sceneMemberID="viewController" storyboardIdentifier="SecondViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="94"/>
+                        <viewControllerLayoutGuide type="bottom" id="95"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="98">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="105" misplaced="YES">
+                                <rect key="frame" x="126" y="140" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="72u-hh-iAk"/>
+                                </constraints>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </variation>
+                                <connections/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="166" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="329" y="64" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close with animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="169" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="69" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="174" firstAttribute="width" constant="181"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="174"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="174"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="105" firstAttribute="centerX" secondItem="98" secondAttribute="centerX" id="2PW-Nx-vsq"/>
+                            <constraint firstItem="105" firstAttribute="top" secondItem="94" secondAttribute="bottom" constant="120" id="8ZO-DE-6o3"/>
+                            <constraint id="170" firstItem="166" firstAttribute="top" secondItem="98" secondAttribute="top" constant="64"/>
+                            <constraint id="171" firstItem="98" firstAttribute="trailing" secondItem="166" secondAttribute="trailing" constant="22"/>
+                            <constraint id="172" firstItem="169" firstAttribute="leading" secondItem="98" secondAttribute="leading" constant="20"/>
+                            <constraint id="173" firstItem="169" firstAttribute="top" secondItem="98" secondAttribute="top" constant="69"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" red="0.10196078431372549" green="0.66666666666666663" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                            <mask key="subviews">
+                                <include reference="166"/>
+                                <include reference="169"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="170"/>
+                                <include reference="171"/>
+                                <include reference="172"/>
+                                <include reference="173"/>
+                            </mask>
+                        </variation>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="166"/>
+                                <exclude reference="169"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="170"/>
+                                <exclude reference="171"/>
+                                <exclude reference="172"/>
+                                <exclude reference="173"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="closeBtn" destination="105" id="name-outlet-105"/>
+                        <outlet property="animateSwitch" destination="166" id="name-outlet-166"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352.8" y="41.82909"/>
+        </scene>
+    </scenes>
+</document>

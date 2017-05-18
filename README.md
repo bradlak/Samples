@@ -17,6 +17,8 @@ Xamarin.Forms pages presenter.
 ### ModalTransitions
 Simple app for presenting built in modal transition styles in Xamarin.iOS
 
+### LocalizationTest
+Localized strings in Xamarin - PCL vs Native
 
 
 

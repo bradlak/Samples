@@ -18,7 +18,10 @@ Xamarin.Forms pages presenter.
 Simple app for presenting built in modal transition styles in Xamarin.iOS
 
 ### LocalizationTest
-Localized strings in Xamarin - PCL vs Native
+Localized strings in Xamarin - PCL vs Native ( not ready )
+
+### AndroidNativeCalculator
+Android two numbers calculator app with .jar file with logic ( Binding Library ) 
 
 
 

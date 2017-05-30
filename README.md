@@ -23,6 +23,8 @@ Localized strings in Xamarin - PCL vs Native ( not ready )
 ### AndroidNativeCalculator
 Android two numbers calculator app with .jar file with logic ( Binding Library ) 
 
+### brcontrols
+Solution for custom controls created in Core Graphics for Xamarin.iOS.
 
 
 

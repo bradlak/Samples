@@ -84,6 +84,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Cirrious.FluentLayouts.Touch">
+      <HintPath>..\packages\Cirrious.FluentLayout.2.5.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -100,6 +103,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -117,11 +121,10 @@
       <DependentUpon>ContentViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\SpotifyButton.cs" />
-    <Compile Include="CustomControls\CircularButton.designer.cs">
-      <DependentUpon>SpotifyButton.cs</DependentUpon>
-    </Compile>
     <Compile Include="ControlType.cs" />
     <Compile Include="ControlInfo.cs" />
+    <Compile Include="CustomControls\CircularProgress.cs" />
+    <Compile Include="CustomControls\AnalogClock.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

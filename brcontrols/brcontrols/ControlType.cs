@@ -1,11 +1,9 @@
-﻿using System;
-namespace brcontrols
+﻿namespace brcontrols
 {
     public enum ControlType
     {
+        AnalogClock,
         SpotifyButton,
         CircularProgress,
-        Pyramid,
-        Clock,
     }
 }

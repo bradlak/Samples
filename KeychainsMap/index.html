@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Keychains</title>
+  <link rel="stylesheet" media="all" href="css/jquery-jvectormap.css" />
+  <script src="scripts/jquery-1.8.2.js"></script>
+  <script src="scripts/jquery-jvectormap.js"></script>
+  <script src="scripts/jquery-mousewheel.js"></script>
+
+  <script src="src/jvectormap.js"></script>
+
+  <script src="src/abstract-element.js"></script>
+  <script src="src/abstract-canvas-element.js"></script>
+  <script src="src/abstract-shape-element.js"></script>
+
+  <script src="src/svg-element.js"></script>
+  <script src="src/svg-group-element.js"></script>
+  <script src="src/svg-canvas-element.js"></script>
+  <script src="src/svg-shape-element.js"></script>
+  <script src="src/svg-path-element.js"></script>
+  <script src="src/svg-circle-element.js"></script>
+  <script src="src/svg-image-element.js"></script>
+  <script src="src/svg-text-element.js"></script>
+
+  <script src="src/vml-element.js"></script>
+  <script src="src/vml-group-element.js"></script>
+  <script src="src/vml-canvas-element.js"></script>
+  <script src="src/vml-shape-element.js"></script>
+  <script src="src/vml-path-element.js"></script>
+  <script src="src/vml-circle-element.js"></script>
+  <script src="src/vml-image-element.js"></script>
+
+  <script src="src/map-object.js"></script>
+  <script src="src/region.js"></script>
+  <script src="src/marker.js"></script>
+
+  <script src="src/vector-canvas.js"></script>
+  <script src="src/simple-scale.js"></script>
+  <script src="src/ordinal-scale.js"></script>
+  <script src="src/numeric-scale.js"></script>
+  <script src="src/color-scale.js"></script>
+  <script src="src/legend.js"></script>
+  <script src="src/data-series.js"></script>
+  <script src="src/proj.js"></script>
+  <script src="src/map.js"></script>
+
+  <script src="scripts/jquery-jvectormap-world-mill-en.js"></script>
+  <script>
+
+    jQuery.noConflict();
+    jQuery(function () {
+      var $ = jQuery;
+
+      var green = '#A4D886'
+      var white = '#FFFFFF'
+
+      $('#map1').vectorMap({
+        map: 'world_mill_en',
+        panOnDrag: true,
+        markerStyle: {
+          initial: {
+            fill: '#FF0000',
+            stroke: '#383f47'
+          }
+        },
+        markers: [
+          { latLng: [49.691987, 19.180511], name: 'Żywiec' },
+          { latLng: [31.631355, -7.987941], name: 'Marakesz' },
+          { latLng: [45.438770, 10.990135], name: 'Werona' },
+          { latLng: [40.823907, 14.424949], name: 'Wezuwiusz, Ottaviano' },
+          { latLng: [54.036409, 19.036256], name: 'Malbork' },
+          { latLng: [53.013766, 18.599146], name: 'Toruń x2' },
+          { latLng: [43.524056, 0.156123], name: 'Marciac' },
+          { latLng: [37.853321, 15.287764], name: 'Taormina' },
+          { latLng: [51.109120, 17.032681], name: 'Wrocław x2' },
+          { latLng: [33.574543, -7.600382], name: 'Casablanca' },
+          { latLng: [37.739927, 14.991833], name: 'Etna, Catania' },
+          { latLng: [19.907471, 99.832638], name: 'Chang Rai' },
+          { latLng: [34.020256, -5.010325], name: 'Fez' },
+          { latLng: [54.441014, 18.558582], name: 'Sopot' },
+          { latLng: [48.146157, 17.109764], name: 'Bratysława' },
+          { latLng: [52.227358, 21.004874], name: 'Warszawa x2' },
+          { latLng: [51.507132, -0.117452], name: 'Londyn x2' },
+          { latLng: [40.852248, 14.268070], name: 'Neapol' },
+          { latLng: [40.626859, 14.374540], name: 'Sorrento' },
+          { latLng: [52.375025, 9.739836], name: 'Hannover' },
+          { latLng: [51.218036, 4.406308], name: 'Antwerpia' },
+          { latLng: [41.900746, 12.493407], name: 'Rzym' },
+          { latLng: [50.826156, 15.520744], name: "Szklarska Poręba"},
+          { latLng: [41.875358, -87.633590], name: "Chicago"},
+          { latLng: [47.499212, 19.047233], name: "Budapeszt"},
+          { latLng: [53.802629, 21.570845], name: "Mikołajki"},
+          { latLng: [40.747181, 14.492957], name: "Pompeje"},
+          { latLng: [51.318133, 21.955748], name: "Kazimierz Dolny"},
+          { latLng: [37.788753, 20.893674], name: "Zakynthos"},
+          { latLng: [41.383659, 2.167294], name: "Barcelona"},
+          { latLng: [37.985011, 23.731642], name: "Ateny"},
+          { latLng: [31.769409, 35.210352], name: "Jerusalem"},
+          { latLng: [38.722184, -9.137559], name: "Lizbona"},
+          { latLng: [45.461479, 9.190091], name: "Milan"},
+          { latLng: [54.350168, 18.641934], name: "Gdańsk"},
+          { latLng: [49.720548, 18.805751], name: "Ustroń"},
+          { latLng: [49.646908, 18.867816], name: "Wisła"},
+          { latLng: [49.300051, 19.952269], name: "Zakopane x2"},
+          { latLng: [45.438177, 12.319987], name: "Wenecja"},
+          { latLng: [52.520490, 13.406916], name: "Berlin"},
+          { latLng: [38.115657, 13.360697], name: "Palermo"},
+          { latLng: [13.753134, 100.505820], name: "Bangkok"},
+          { latLng: [49.986088, 18.944850], name: "Pszczyna"},
+          { latLng: [48.149375, 17.100156], name: "Bratysława"},
+          { latLng: [3.138534, 101.690172], name: "Kuala Lumpur"},
+          { latLng: [48.855649, 2.354265], name: "Paryz"},
+          { latLng: [32.079464, 34.871258], name: "Tel-Aviv"},
+          { latLng: [40.711919, -74.000944], name: "Nowy Jork"},
+          { latLng: [35.216782, 24.854174], name: "Kreta"},
+          { latLng: [50.445368, 16.873451], name: "Złoty Stok"},
+          { latLng: [54.636647, 18.773826], name: "Hel"},
+          { latLng: [44.494906, 11.341294], name: "Bolonia"},
+          { latLng: [41.902554, 12.454636], name: "Watykan"},
+          { latLng: [50.775792, 15.754447], name: "Karpacz"},
+          { latLng: [49.447584, 11.082242], name: "Norymberga"},
+          { latLng: [36.155920, 27.965470], name: "Rodos"},
+          { latLng: [44.729625, 11.286986], name: "Cento"},
+          { latLng: [50.723219, 23.251089], name: "Zamość"},
+          { latLng: [50.065611, 19.949284], name: "Kraków"},
+          { latLng: [43.722374, 10.399680], name: "Pisa"},
+          { latLng: [50.771702, 15.429027], name: "Harrachov"},
+          { latLng: [39.000282, 1.455227], name: "Ibiza"},
+          { latLng: [40.076416, 8.935310], name: "Sardynia"}
+        ],
+        series: {
+          regions: [{
+            values: {
+              "BD": white,
+              "BE": green,
+              "BF": white,
+              "BG": white,
+              "BA": white,
+              "BN": white,
+              "BO": white,
+              "JP": white,
+              "BI": white,
+              "BJ": white,
+              "BT": white,
+              "JM": white,
+              "BW": white,
+              "BR": white,
+              "BS": white,
+              "BY": white,
+              "BZ": white,
+              "RU": white,
+              "RW": white,
+              "RS": white,
+              "TL": white,
+              "TM": white,
+              "TJ": white,
+              "RO": white,
+              "GW": white,
+              "GT": white,
+              "GR": green,
+              "GQ": white,
+              "GY": white,
+              "GE": white,
+              "GB": green,
+              "GA": white,
+              "GN": white,
+              "GM": white,
+              "GL": white,
+              "GH": white,
+              "OM": white,
+              "TN": white,
+              "JO": white,
+              "HR": white,
+              "HT": white,
+              "HU": green,
+              "HN": white,
+              "PR": white,
+              "PS": green,
+              "PT": green,
+              "PY": white,
+              "PA": white,
+              "PG": white,
+              "PE": white,
+              "PK": white,
+              "PH": white,
+              "PL": green,
+              "ZM": white,
+              "EH": white,
+              "EE": white,
+              "EG": white,
+              "ZA": white,
+              "EC": white,
+              "IT": green,
+              "VN": green,
+              "SB": white,
+              "ET": white,
+              "SO": white,
+              "ZW": white,
+              "ES": green,
+              "ER": white,
+              "ME": white,
+              "MD": white,
+              "MG": white,
+              "MA": green,
+              "UZ": white,
+              "MM": white,
+              "ML": white,
+              "MN": white,
+              "MK": white,
+              "MW": white,
+              "MR": white,
+              "UG": white,
+              "MY": green,
+              "MX": green,
+              "IL": green,
+              "FR": green,
+              "XS": white,
+              "FI": white,
+              "FJ": white,
+              "FK": white,
+              "NI": white,
+              "NL": green,
+              "NO": green,
+              "NA": white,
+              "VU": white,
+              "NC": white,
+              "NE": white,
+              "NG": white,
+              "NZ": white,
+              "NP": white,
+              "XK": white,
+              "CI": white,
+              "CH": green,
+              "CO": white,
+              "CN": white,
+              "CM": white,
+              "CL": white,
+              "XC": white,
+              "CA": white,
+              "CG": white,
+              "CF": white,
+              "CD": white,
+              "CZ": green,
+              "CY": white,
+              "CR": white,
+              "CU": white,
+              "SZ": green,
+              "SY": white,
+              "KG": white,
+              "KE": white,
+              "SS": white,
+              "SR": white,
+              "KH": green,
+              "SV": white,
+              "SK": white,
+              "KR": white,
+              "SI": white,
+              "KP": white,
+              "KW": white,
+              "SN": white,
+              "SL": white,
+              "KZ": white,
+              "SA": white,
+              "SE": green,
+              "SD": white,
+              "DO": white,
+              "DJ": white,
+              "DK": white,
+              "DE": green,
+              "YE": white,
+              "DZ": white,
+              "US": green,
+              "UY": white,
+              "LB": white,
+              "LA": white,
+              "TW": white,
+              "TT": white,
+              "TR": green,
+              "LK": green,
+              "LV": white,
+              "LT": green,
+              "LU": white,
+              "LR": white,
+              "LS": white,
+              "TH": green,
+              "TF": white,
+              "TG": white,
+              "TD": white,
+              "LY": white,
+              "AE": white,
+              "VE": white,
+              "AF": white,
+              "IQ": white,
+              "IS": white,
+              "IR": white,
+              "AM": white,
+              "AL": white,
+              "AO": white,
+              "AR": white,
+              "AU": white,
+              "AT": white,
+              "IN": white,
+              "TZ": white,
+              "AZ": white,
+              "IE": white,
+              "ID": white,
+              "UA": green,
+              "QA": white,
+              "MZ": white,
+            }
+          }]
+        }
+      });
+    })
+  </script>
+</head>
+
+<body style="background: #505050">
+  <div id="map1" style="width: 100%; height: 800px"></div>
+</body>
+
+</html>
